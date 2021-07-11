@@ -13,7 +13,8 @@ A peeking iterator allows one to look at the next item without taking it. This
 can be useful if one only wants to consume items while a certain condition is
 met. For example, a scheduler algorithm that only schedules tasks within a
 certain time window can use a peeking iterator to check whether the event should
-be scheduled, otherwise leaving it in the iterator for the next iteration.
+be scheduled, otherwise leaving it in the iterator for the next scheduling
+cycle.
 
 # [mod.ts](mod.ts)
 
