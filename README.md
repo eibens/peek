@@ -65,7 +65,7 @@ import { takeWhile } from "https://deno.land/x/peek/take_while.ts";
 const peeking = fromIterable("abcde");
 const abc = takeWhile(peeking, (x) => x !== "d");
 
-console.assert(Array.from(abc).join("") === "abc");
+console.assert([...abc].join("") === "abc");
 ```
 
 [peek]: #
